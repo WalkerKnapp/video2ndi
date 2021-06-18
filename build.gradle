@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'me.walkerknapp'
+version '1.0.0'
+
+mainClassName = 'me.walkerknapp.video2ndi.Video2Ndi'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.bytedeco', name: 'ffmpeg-platform', version: '4.2.1-1.5.2'
+    implementation 'me.walkerknapp:devolay:2.0.1'
+}
